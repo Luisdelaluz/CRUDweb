@@ -14,6 +14,7 @@ namespace CRUDweb.Controllers
         public ActionResult Index()
         {
             List<ListTablaViewModel> lst;
+            // Aqui es la variable del Entitie
             using (tiendaEntities1 db = new tiendaEntities1())
             {
                 lst = (from d in db.tabla
